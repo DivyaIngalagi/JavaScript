@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>learning object model.</title>
+
+        </head>
+        <body>
+         
+          <form name="contactusForm">
+
+          <input type="text" name="firstName" value="mahesh">
+          <br>
+          
+          </form>
+
+<form name="registrationForm">
+
+          <input type="text" name="lastName" value="patel">
+          <br>
+          
+          </form>
+
+        </body>
+      </html>
+
+      <script>
+
+     // let contactfomr =  document.forms["contactusForm"];
+
+    // alert( "total form tag: " + document.forms.length);
+
+let contactfomr =  document.forms[0];
+
+contactfomr.elements[0];
+
+contactfomr.elements["firstName"];
+
+
+alert( "contactform child: " + contactfomr.elements.length);
+
+      alert(contactfomr.firstName.value);
+
+    </script>
+  </head>
+</html>
+ <script src="./ObjectModel/BOmmethods.js"/>

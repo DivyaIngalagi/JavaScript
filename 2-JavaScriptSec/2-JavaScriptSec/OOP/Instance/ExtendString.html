@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      //   String.prototype.email = "cons@func.com";
+
+      //   console.log("function instance:" + Employee.prototype);
+
+      //   const emp1 = new Employee("paresh");
+
+      String.prototype.greet = function () {
+        alert(this.toString() + " Good Evening");
+      };
+      var name = "Mr Ashok";
+
+      console.log(name.greet());
+
+      console.log(String.prototype);
+    </script>
+  </body>
+</html>

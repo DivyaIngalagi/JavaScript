@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+       let listOfAttendees = 
+       [
+         {
+           "name": "uncle bob",
+           "email": "p@p.com"
+        },
+
+         {
+           "name": "juwal lowy",
+           "email": "lowy@gmail.com"
+        },
+
+       ];
+
+       //  convert jsObject into string.
+
+       var jsonObj = JSON.stringify(listOfAttendees);
+      //  alert(typeof jsonObj); string type.
+      
+    
+      // convert string into javascript Object.
+
+let javaScriptObj = JSON.parse(jsonObj);
+
+for(const key of javaScriptObj)
+{
+  console.log(key.email);
+}
+           
+      </script>
+        </head>
+        <body>
+        </body>
+      </html>
+
+      <script>
+    </script>
+  </head>
+</html>
+
+ 

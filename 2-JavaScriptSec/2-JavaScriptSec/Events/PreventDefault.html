@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <a id="myAnchor" href="http://www.google.com">open google site</a>
+    <br />
+  </body>
+</html>
+
+<script>
+  document.getElementById("myAnchor").addEventListener("click", myClickEvent);
+
+  function myClickEvent(e) {
+    e.preventDefault();
+  }
+</script>

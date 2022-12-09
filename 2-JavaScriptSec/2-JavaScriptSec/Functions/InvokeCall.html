@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      const Greet = function (message) {
+        this.message = message;
+      };
+
+      function SetColor(color) {
+        this.color = color;
+
+        //alert(this);
+      }
+      const greet1 = new Greet("call invoke");
+
+      SetColor.call(greet1, "hello");
+      //=======================================================================================
+      const objectLiteral = {
+        printInfo: function () {
+          alert(this.firstName + " going well.");
+        },
+      };
+
+      const person = {
+        firstName: "mahesh",
+      };
+
+      objectLiteral.printInfo.apply(person);
+    </script>
+  </body>
+</html>

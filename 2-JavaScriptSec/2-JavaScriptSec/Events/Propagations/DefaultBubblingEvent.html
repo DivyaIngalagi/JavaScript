@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+   
+    </script>
+        </head>
+        <body>
+            <h1>event bubble up from child to parent.</h1>
+            
+            <div id="parent">
+                Parent.
+                <span id="child">child click.</span>
+            </div>
+
+        </body>
+      </html>
+
+      <script>
+
+            document.getElementById('parent').addEventListener('click',parentClickEvent);
+
+             document.getElementById('child').addEventListener('click',childClickEvent);
+            
+            function parentClickEvent()
+        {
+            alert("parent event.:- Div");
+        }
+
+         function childClickEvent()
+        {
+            alert("child event: - span.");
+        }
+    
+        </script>
+  
+</html>
+
+ 

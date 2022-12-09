@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>The Calculator</title></head>
+
+<body>
+
+
+
+<label>Enter Number1</label>
+<input id="num1" type="text"/>
+<br/><br/>
+<label>Enter Number2</label>
+<input id="num2" type="text"/>
+<br/><br/>
+
+<label>Operation</label>
+<select id="calci">
+<option value="select">--Select--</option>
+<option value="add">Add</option>
+<option value="mul">Multiply</option>
+<option value="div">Divide</option>
+</select>
+<br/><br/>
+<div id="msg" style="color: red;"></div>
+<div id="msg1"></div>
+<input id="btn" type="button" value="Calculate" style="margin-left: 223px;"/>
+
+
+
+</body>
+<script>
+
+document.getElementById('btn').addEventListener('click',myClickEvent);
+function myClickEvent(){
+
+    // const a=parseInt(document.getElementById("num1").value);
+    // const b=parseInt(document.getElementById("num2").value);
+    // var x="Enter numeric value";
+    // let c=0;
+    // if(isNaN(a)||isNaN(b)){
+    //     document.getElementById("msg").innerHTML=x;
+    // }else{
+    //     document.getElementById("msg").innerHTML="";
+    // }
+
+    // if(isNaN(b)){
+    //     document.getElementById("msg2").innerHTML=x;
+    // }
+    
+    
+    // console.log(regex.test(a));
+    let pattern = /^([1-9]{1,2}|100)$/;
+    const a1=document.getElementById("num1").value;
+    const b1=document.getElementById("num2").value;
+    // var regex = new RegExp("[0-9]{1,3}$");
+    let output1 = pattern.test(a1);
+    let output2 = pattern.test(b1);
+    // var letters=/^[1-100]+$/;
+    // let output1 = a1.match(letters);
+    // let output2 = b1.match(letters);
+    
+    alert(output1);
+    alert(output2);
+
+    // if(a>100||b>100){
+    //     document.getElementById("msg").innerHTML="Enter numbers between 1-100";
+    //   }else{
+    //     document.getElementById("msg").innerHTML="";
+    //   }
+
+    // if(a){
+    //     document.getElementById("msg1").innerHTML="Enter numbers between 1-100";
+    // }
+
+//code
+    // if(document.getElementById("calci").value=="add"){
+    //     if(isNaN(a)||isNaN(b)){
+    //         document.getElementById("msg").innerHTML="Enter numeric value";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }else if(a>100||b>100){
+    //         document.getElementById("msg").innerHTML="Enter numbers between 1-100";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }
+    //     else{
+    //     c=a+b;
+    //     document.getElementById("msg1").innerHTML="The addition value is:"+c;
+    //     document.getElementById("msg").innerHTML=""
+    //     }
+    // }
+    // else if(document.getElementById("calci").value=="mul"){
+    //     if(isNaN(a)||isNaN(b)){
+    //         document.getElementById("msg").innerHTML="Enter numeric value";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }else if(a>100||b>100){
+    //         document.getElementById("msg").innerHTML="Enter numbers between 1-100";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }
+    //     else{
+    //     c=a*b;
+    //     document.getElementById("msg1").innerHTML="The multiplication value is:"+c;
+    //     document.getElementById("msg").innerHTML=""
+    //     }
+    // }
+    // else if(document.getElementById("calci").value=="div"){
+    //     if(isNaN(a)||isNaN(b)){
+    //         document.getElementById("msg").innerHTML="Enter numeric value";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }else if(a>100||b>100){
+    //         document.getElementById("msg").innerHTML="Enter numbers between 1-100";
+    //         document.getElementById("msg1").innerHTML=""
+    //     }
+    //     else{
+    //     if(b!=0){
+    //     c=a/b;
+    //     document.getElementById("msg1").innerHTML="The division value is:"+c;
+    //     document.getElementById("msg").innerHTML=""
+    // }else{
+    //     document.getElementById("msg1").innerHTML="second number cannot be zero for division";
+    //     document.getElementById("msg").innerHTML=""
+    // }
+    //     }
+    // }
+    // else{
+    //         alert("Please select correct Operation");
+    // }
+}
+
+</script>
+
+
+</html>

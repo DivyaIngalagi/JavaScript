@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>learning object model.</title>
+
+        <body>
+         
+            <select id="ddlCountry">
+<option>India</option>
+<option>USA</option>
+<option>PAK</option>
+
+            </select>
+            
+        </body>
+      </html>
+
+  </head>
+</html>
+
+<script>
+
+  let ddlCountry = document.getElementById("ddlCountry");
+  let doc=document.createTextNode("Hello Insia")
+  alert(ddlCountry.options[0].value);//[0].text="hello"
+  alert(ddlCountry.value);//by default firest it will show if we use value upside it will show that otherwise ot will showvalue
+  // alert(ddlCountry.innerText());
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    
+<fieldset>
+    <legend>Addition</legend>
+Enter No1
+<input type="text" name="no1" id="num1"/><br/>
+Enter No2
+<input type="text" name="no2" id="num2"/><br/>
+<!--<input type="button" onclick="alert('hi')" value="Save"/>-->
+<button type="button" id="btn">Click Event</button>
+</fieldset>
+
+</body>
+
+<script>
+    document.getElementById('btn').addEventListener('click',myClickEvent)
+    function myClickEvent()
+    {
+       const a=parseInt(document.getElementById("num1").value);
+       const b=parseInt(document.getElementById("num2").value);
+       
+       console.log(a+b);
+      alert(a+b);
+    }
+</script>
+
+</html>

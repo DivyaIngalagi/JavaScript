@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // object literal
+
+      let employee = {
+        firstName: "mahesh",
+        lastName: "patel",
+        email: "p@p.com",
+      };
+
+      employee.getFullName = function () {
+        return this.firstName + ":" + this.lastName;
+      };
+
+      alert(employee.getFullName());
+    </script>
+  </body>
+</html>

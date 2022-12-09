@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array assignment</title>
+
+    <script>
+     
+  
+     let numbers = [1,2,3,4,5,6,7,8,9,10];
+        var sum=0;
+        var sume=0;
+        var count=0;
+       
+        for (const num of numbers) {
+          document.writeln(num);
+        }
+        for (const num of numbers) {
+            
+            sum=sum+num;
+        }
+        document.write("<br\>");
+        document.write("The sum of numbers are:");
+        document.write("<br\>");
+        document.writeln(sum);
+        
+        for (const num of numbers) {
+            if(num%2==0){
+            sume=sume+num;
+        }
+        }
+        document.write("<br\>");
+        document.write("The sum of even numbers are:")
+        document.write("<br\>");
+        document.writeln(sume);
+       
+        for (const num of numbers) {
+            if(num%2==0){
+            count++;
+        }
+        }
+        document.write("<br\>");
+        document.write("The total even numbers are:");
+        document.write("<br\>");
+        document.writeln(count);
+      </script>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+
+
+</html>

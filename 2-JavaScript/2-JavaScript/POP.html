@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head> </head>
+
+  <body>
+    <div id="parent">
+      Parent.
+
+      <span id="child">child click.</span>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("parent")
+      .addEventListener("click", parentClickEvent, true);
+
+    document
+      .getElementById("child")
+      .addEventListener("click", childClickEvent, true);
+
+    function parentClickEvent(e) {
+      alert("parent event.:- Div");
+      e.stopPropagation();
+    }
+
+    //function childClickEvent()
+
+    //{
+
+    //alert("child event: - span.");
+
+    //}
+
+    function childClickEvent() {
+      alert("child event: - span.");
+      // e.stopPropagation();
+    }
+
+    //for(const t in clickEvent)
+
+    //document.write(t +"<br/>");
+  </script>
+</html>

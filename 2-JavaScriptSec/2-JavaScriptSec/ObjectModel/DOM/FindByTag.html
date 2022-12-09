@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>learning object model.</title>
+
+        </head>
+        <body>
+            <p>Hello Text.</p>
+        </body>
+      </html>
+
+      <script>
+let ele=document.createElement("a")
+let e=document.createElement("h1");
+
+e.innerText="Hello Hi"
+document.body.appendChild(e);
+ele.setAttribute('href','https://www.google.com');
+ele.innerHTML="<b>hrllo</b>";
+// ele.setAttribute("target","_blank");
+// document.body.append(ele);
+// alert(ele.text);
+document.body.insertBefore(ele,e);
+  let inputs =   document.getElementsByTagName("p");  // name attribute
+
+  alert(inputs[0].innerText);
+
+
+
+    </script>
+  </head>
+</html>
+ 
